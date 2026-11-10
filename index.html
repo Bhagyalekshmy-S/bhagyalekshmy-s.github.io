@@ -322,7 +322,21 @@
       <!-- <p class="meta">Office: Building, Room 000, Your University</p> -->
     </section>
 
-    <footer>© 2026 Bhagyalekshmy S</footer>
+    <!-- <footer>© 2026 Bhagyalekshmy S</footer> -->
+    <footer>Last updated: <span id="current-date"></span></footer>
+      <script>
+        // 1. Get the current date from the user's system
+        const now = new Date();
+
+        // 2. Format the date to show only the full month name and the year
+        const formattedDate = new Intl.DateTimeFormat('en-US', {
+            month: 'long',
+            year: 'numeric'
+        }).format(now);
+
+        // 3. Inject the formatted text into the HTML element
+        document.getElementById('current-date').textContent = formattedDate;
+    </script>
   </div>
 </main>
 
