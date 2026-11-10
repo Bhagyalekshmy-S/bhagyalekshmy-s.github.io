@@ -22,7 +22,7 @@
     --muted: #293036;
     --rule: #42bced;
     --accent: #4169e1;
-    --serif: "Newsreader", Georgia, "Times New Roman", serif;
+    --serif: Georgia, "Times New Roman", serif, "Newsreader";
     --sans: "Public Sans", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
     --sidebar-w: 280px;
   }
@@ -193,11 +193,12 @@
 <body>
 
 <aside class="sidebar">
+ <div class="space-above"></div>
   <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch between light and dark mode" title="Switch theme">
     <svg class="moon" viewBox="0 0 24 24"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
     <svg class="sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
   </button>
-  <div class="space-above"></div>
+ 
   <!-- Put your photo in the same folder and name it photo.jpg (or change the src) -->
   <img class="photo" src="my-photo.jpeg" alt="Portrait of Bhagyalekshmy">
   <h1>Bhagyalekshmy S</h1>
@@ -256,6 +257,10 @@
       <p>Before graduate school, I completed my undergraduate degree in Your Major at Your College. Outside the lab, I enjoy a hobby or two.</p> -->
     </section>
 
+    <p>I am a research intern at the Indian Institute of Technology (IIT) Delhi, supervised by <a href="https://k-rajendra.github.io/">Prof Rajendra Kumar</a>. In general, I am interested in cryptography and coding theory. Recently, I graduated from the Indian Institute of Science Education and Research (IISER) Pune with a BS-MS dual degree in Mathematics, during which I did my masters' thesis on code-based cryptography.</p>
+
+    <p>I am also working with <a href="https://sites.google.com/site/henrychimal/home">Prof Henry Chimal-Dzul</a>, <a href="https://rutujakshirsagar.wordpress.com/">Dr Rutuja Kshirsagar</a> and Angelo Lomeli on research projects concerning quasi-twisted (QT) codes and the cryptosystems based on the QT codes.</p>
+      
     <section id="education">
       <h2>Education</h2>
       <!-- <div class="entry">
@@ -268,7 +273,7 @@
       </div>
     </section>
 
-    <section id="research">
+    <!-- <section id="research">
       <h2>Research</h2>
       <!-- <div class="entry"> -->
         <!-- <h3>Project or theme title</h3>
@@ -278,13 +283,13 @@
         <!-- <h3>Second project or theme title</h3>
         <p>Two or three sentences describing the problem, your approach, and what you have found so far.</p> -->
       <!-- </div> -->
-    </section>
+    <!-- </section> --> 
 
     <section id="publications">
       <h2>Publications</h2>
         <p> (In order of appearance on arXiv and authors' names sorted alphabetically.)</p>
       <div class="entry">
-        <h3>Quasi-twisted codes: decoding and applications in code-based cryptography</h3>
+        <h3>Quasi-twisted codes: decoding and applications in code-based cryptography (Masters' thesis)</h3>
         <p class="meta"><strong>Bhagyalekshmy S</strong>, Rutuja Kshirsagar. 
             <!-- <em>Journal or Conference</em>,  -->
             arXiv, 2025.</p>
