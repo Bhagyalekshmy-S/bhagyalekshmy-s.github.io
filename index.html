@@ -130,9 +130,9 @@
     transition: background 0.15s, color 0.15s;
   }
   .theme-toggle:hover { background: var(--rule); color: var(--ink); }
-  .theme-toggle:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .theme-toggle:focus-visible { outline: 2px solid var(--accent); outline-offset: 5px; }
   .theme-toggle svg {
-    width: 19px; height: 19px;
+    width: 22px; height: 22px;
     fill: none; stroke: currentColor;
     stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round;
   }
@@ -145,7 +145,7 @@
     margin-left: var(--sidebar-w);
     padding: 4.5rem 3.5rem 6rem;
   }
-  .content { max-width: 44rem; }
+  .content { max-width: 50rem; }
   section { margin-bottom: 3.75rem; scroll-margin-top: 2rem; }
   h2 {
     font-size: 1.7rem;
@@ -194,6 +194,7 @@
 
 <aside class="sidebar">
  <div class="space-above"></div>
+    
   <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch between light and dark mode" title="Switch theme">
     <svg class="moon" viewBox="0 0 24 24"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
     <svg class="sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
@@ -257,10 +258,12 @@
       <p>Before graduate school, I completed my undergraduate degree in Your Major at Your College. Outside the lab, I enjoy a hobby or two.</p> -->
     </section>
 
+    <section>
     <p>I am a research intern at the Indian Institute of Technology (IIT) Delhi, supervised by <a href="https://k-rajendra.github.io/">Prof Rajendra Kumar</a>. In general, I am interested in cryptography and coding theory. Recently, I graduated from the Indian Institute of Science Education and Research (IISER) Pune with a BS-MS dual degree in Mathematics, during which I did my masters' thesis on code-based cryptography.</p>
 
     <p>I am also working with <a href="https://sites.google.com/site/henrychimal/home">Prof Henry Chimal-Dzul</a>, <a href="https://rutujakshirsagar.wordpress.com/">Dr Rutuja Kshirsagar</a> and Angelo Lomeli on research projects concerning quasi-twisted (QT) codes and the cryptosystems based on the QT codes.</p>
-      
+    </section>
+        
     <section id="education">
       <h2>Education</h2>
       <!-- <div class="entry">
